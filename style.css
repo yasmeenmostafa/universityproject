@@ -1,0 +1,201 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-image: url(banner.png);
+    background-position: center center;
+    background-size: cover;
+    padding:0px;
+    
+    height: 100vh;
+
+}
+.color{
+    background-color:rgba(54, 54, 84, 0.5);
+    height: 100vh;
+}
+.text{
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    font-size: large;
+    color:white;
+}
+.text h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.text button{
+    padding:5px 10px;
+    background: fixed;
+    border: solid 2px azure;
+    color: white;
+    margin:20px;
+}
+.text button:hover{
+    background-color: azure;
+    color:rgb(0, 32, 62)
+}
+.clear{
+    clear:both;
+}
+.first{
+    float: left;
+    margin:20px 50px;
+
+}
+.first img{
+    width: 70%;
+}
+.second{
+    float:right;
+    
+    width:50%;
+    
+    color: white;
+}
+.second li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 30px;
+    margin-top:10px;
+}
+.second ul{
+    padding-left:30%;
+}
+.second a{
+    display: block;
+    
+}
+.content{
+    width:80%;
+    
+    margin: auto;
+    margin-top:70px;
+}
+/* الللللللللللللللللللللللللللللللون#F2DADA */
+
+.part1{
+    text-align: center;
+}
+.course{
+    float: left;
+    width:30%;
+    margin: 9px;
+    padding :10px;
+    background-color:#F2DADA ;
+    border-radius: 5%;
+    text-align: center;
+    transition-property: scale(1.07);
+    transition-duration: 1s;
+}
+.course:hover{
+    transform: scale(1.07);
+}
+.camp::after{
+    content:"";
+    top:100%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background-color:rgba(22, 22, 23, 0.2);
+    border-radius: 5%;
+
+    position: absolute;
+}
+.camp:hover.camp::after{
+    top: 0%;
+    transition-duration: 0.5s;
+}
+
+.content p{
+    color:rgb(121, 121, 121);
+
+}
+.camp{
+    float: left;
+    width:32%;
+    margin:7px;
+    position: relative;
+overflow: hidden;   
+    
+}
+.camp img{
+    width:100%;
+    border-radius: 5%;
+
+}
+
+.paragraph p{
+    text-align: center;
+    color:rgb(121, 121, 121)
+
+}
+.paragraph h2{
+    text-align: center;
+    color: black;
+    font-weight:bold;
+}
+.facility{
+    width:31%;
+    margin :10px;
+    float: left;
+    background-color: rgb(246, 248, 248);
+    border-radius: 3%;
+}
+
+
+.facility img{
+    width:100%;
+    border-radius: 3%;
+}
+footer{
+   background-color:#F2DADA;
+   color:black;
+   text-align: center;
+   padding: 50px;
+   margin-top: 20px;
+}
+@media only screen and (max-width:1480px) {
+
+    .course{
+        width: 28%;
+       
+    }
+    .camp{
+        width: 30%;
+    }
+    .facility{
+        width: 29%;
+    }
+}
+
+@media only screen and (max-width:1340px) {
+    
+    .second{
+        display: none;
+    }
+}
+@media only screen and (max-width:768px) {
+    .course{
+        width: 80%;
+        
+    }
+    .courses{
+        margin-left:30px;
+    }
+    .camp{
+        width: 80%;
+        
+    }
+    .camps{
+        margin-left:30px;
+    }
+    .facility{
+        width: 80%;
+        margin-left:30px;
+
+    }
+}
